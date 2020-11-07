@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-cn" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>秘密の小屋 | 闻柒</title>
+</head>
+<body>
+<section class="cd-intro">
+	<div class="cd-intro-content mask">
+		<h1 data-content="秘密の小屋已迁移至新地点"><span>秘密の小屋已迁移至新地点</span></h1>
+		<p><span id="time">22</span>秒后开始传送...(目的地: wenqiblog.ml)</p>
+		<div class="action-wrapper">
+			<p>
+				<a href="https://wenqiblog.ml" class="cd-btn main-action">☆手动传送☆</a>
+				<a href=”bai#” onClick=”javascript :history.back(-1);” class="cd-btn">←返回上层</a>
+			</p>
+		</div>
+	</div>
+</section>
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
+
+<!---倒计时代码--->
+<script>function delayUrl(url) {
+    var ia = document.getElementById('time').innerHTML;
+    if (ia > 0) {
+      ia--;
+      document.getElementById('time').innerHTML = ia;
+    } else {
+      window.location.href = url;
+    }
+    setTimeout("delayUrl('" + url + "')", 1000);
+  }
+  delayUrl("https://wenqiblog.ml/");</script>
