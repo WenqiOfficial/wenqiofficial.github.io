@@ -1,2 +1,2 @@
 # 这是中转站页面！
-博客地址：wenqiblog.ml
+博客地址：blog.wenqi.icu
